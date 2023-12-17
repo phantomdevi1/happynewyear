@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css2?family=Kalnia&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background: url(img/back.svg) fixed no-repeat;
+    background-size: cover;
+}
+
+h1, .content p {
+    font-family: "Kalnia", sans-serif;
+    background: linear-gradient(
+        to right,
+        #7953cd 20%,
+        #00affa 30%,
+        #0190cd 70%,
+        #764ada 80%
+    );
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-fill-color: transparent;
+    background-size: 500% auto;
+    animation: textShine 5s ease-in-out infinite alternate;
+}
+
+h1 {
+    margin-top: 3%;
+    font-size: 6vw; /* Используйте vw для размера текста */
+}
+
+.content {
+    width: 75%;
+    min-height: 700px;
+    background-color: blanchedalmond;
+    margin-top: 100px;
+    border-radius: 10px;
+    margin-bottom: 100px;
+    display: flex;
+    flex-direction: column;
+}
+
+.content p {
+    margin-top: 3%;
+    font-size: 6vw; /* Используйте vw для размера текста */
+}
+
+.content span {
+    font-family: "Kalnia", sans-serif;
+    margin: 20px 20% 20px 20%;
+    font-size: 2vw; /* Используйте vw для размера текста */
+}
+.gifts_block p{
+    font-size: 2vw;
+}
+.block_tovar{
+    margin: 20px;
+    width: 60%;
+}
+.gifts_block img{
+    border-radius: 10px;
+    width: 60%;
+    margin: 5%;
+    cursor: pointer;
+    transition: 0.5s;
+}
+.gifts_block img:hover{
+    transform: scale(1.1);
+    transition: 0.5s;
+}
+@keyframes textShine {
+    0% {
+        background-position: 0% 50%;
+    }
+    100% {
+        background-position: 100% 50%;
+    }
+}
